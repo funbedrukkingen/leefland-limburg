@@ -1,3 +1,15 @@
 name = "leefland-limburg"
-pages_build_output_dir = "dist"
+main = "worker.js"
 compatibility_date = "2026-09-15"
+compatibility_flags = ["nodejs_compat"]
+
+# `npm run build:static` populates dist/ (prerendered pages + dist/_public/
+# assets). The worker only handles the known page routes (see worker.js);
+# everything else — including /_public/* — falls through to these static
+# assets. html_handling is "none" so a request like /doe-mee does NOT get
+# auto-resolved to dist/doe-mee.html by the asset layer, which would
+# otherwise shadow the worker's own live rendering of that route.
+[assets]
+directory = "dist"
+binding = "ASSETS"
+html_handling = "none"

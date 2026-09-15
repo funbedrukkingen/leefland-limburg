@@ -1,5 +1,7 @@
 <div style="font-family: 'Archivo', system-ui, sans-serif; background: #F4F6F1; overflow-x: hidden">
 
+  <leefland-jsonld count="50"></leefland-jsonld>
+
   <site-topbar></site-topbar>
 
   <site-header active="aanpak"></site-header>
@@ -22,7 +24,32 @@
     </div>
   </section>
 
-  
+  <section aria-hidden="true" style="background: #151D17; line-height: 0; overflow: hidden">
+    <svg viewBox="0 0 1280 140" width="100%" height="140" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Topografisch lijnenpatroon van het Limburgse heuvelland">
+      <defs>
+        <pattern id="contour-tile" width="160" height="140" patternUnits="userSpaceOnUse">
+          <path d="M0 110 Q 20 90 40 100 T 80 95 T 120 105 T 160 90" fill="none" stroke="#2A6A44" stroke-width="1.4" opacity=".55"/>
+          <path d="M0 80 Q 20 55 40 68 T 80 60 T 120 72 T 160 55" fill="none" stroke="#2A6A44" stroke-width="1.2" opacity=".4"/>
+          <path d="M0 50 Q 20 28 40 38 T 80 30 T 120 42 T 160 26" fill="none" stroke="#9C7A2E" stroke-width="1.1" opacity=".35"/>
+          <path d="M0 130 Q 20 118 40 124 T 80 120 T 120 128 T 160 116" fill="none" stroke="#2A6A44" stroke-width="1" opacity=".3"/>
+          <circle cx="24" cy="20" r="1.6" fill="#9C7A2E" opacity=".5"/>
+          <circle cx="96" cy="104" r="1.6" fill="#9C7A2E" opacity=".4"/>
+          <circle cx="140" cy="46" r="1.6" fill="#2A6A44" opacity=".5"/>
+        </pattern>
+        <pattern id="brutalist-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+          <rect x="0" y="0" width="1" height="28" fill="rgba(244,246,241,.06)"/>
+          <rect x="0" y="0" width="28" height="1" fill="rgba(244,246,241,.06)"/>
+        </pattern>
+      </defs>
+      <rect x="0" y="0" width="1280" height="140" fill="#151D17"/>
+      <rect x="0" y="0" width="1280" height="140" fill="url(#contour-tile)"/>
+      <rect x="0" y="0" width="1280" height="140" fill="url(#brutalist-grid)"/>
+      <text x="24" y="34" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="2" fill="rgba(244,246,241,.55)">PROVINCIE LIMBURG — HOOGTELIJNEN 30M — INDICATIEF</text>
+      <text x="1256" y="122" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="2" fill="rgba(244,246,241,.4)">51.44°N 5.98°E</text>
+    </svg>
+  </section>
+
+
   <section style="background: #fff; border-bottom: 1px solid rgba(21,29,23,.08)">
     <div style="max-width: 1280px; margin: 0 auto; padding: clamp(26px,4vh,44px) clamp(20px,5vw,56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: clamp(20px,3vw,40px); align-items: center">
       <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: rgba(21,29,23,.55)">Samen met</span>
@@ -66,6 +93,34 @@
     </div>
   </section>
 
+  <section id="visie" style="background: #fff">
+    <div style="max-width: 900px; margin: 0 auto; padding: clamp(56px,10vh,124px) clamp(20px,5vw,56px)">
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #9C7A2E; margin: 0 0 18px">Onze visie</p>
+      <h2 style="font-weight: 700; font-size: clamp(1.8rem,3.2vw,2.7rem); line-height: 1.14; letter-spacing: -.02em; margin: 0 0 28px; max-width: 20ch; text-wrap: pretty">Wonen als iets dat je sámen maakt, niet iets dat je koopt</h2>
+      <div style="display: grid; gap: 22px; font-family: 'Spectral', Georgia, serif; font-size: clamp(1.02rem,1.3vw,1.15rem); line-height: 1.72; color: rgba(21,29,23,.85)">
+        <p>De naoorlogse woningmarkt in Limburg is decennialang gebouwd rond twee spelers: de woningcorporatie die verhuurt, en de projectontwikkelaar die verkoopt. Beide modellen hebben hun waarde bewezen, maar geen van beide is ontworpen om iets te doen met de vraag die wij het meest horen: bewoners die niet alleen een dak boven hun hoofd willen, maar ook zeggenschap over hóe ze wonen, mét wie, en tegen welke voorwaarden voor de lange termijn.</p>
+        <p>Leefland Limburg is opgericht vanuit de overtuiging dat er een derde bouwstroom nodig is naast corporaties en ontwikkelaars: collectieven van bewoners die zelf opdrachtgever zijn. Niet als curiositeit voor de enkeling met tijd en kapitaal, maar als een volwaardige, herhaalbare route die in elke Limburgse gemeente toegankelijk is — van de Westelijke Mijnstreek tot Zuid-Limburg, van het Maasdal tot de Peel.</p>
+        <p>Die overtuiging is niet alleen ideologisch, ze is ook praktisch. Wooncollectieven bouwen gemiddeld zuiniger dan de markt, houden rekening met wie er al woont in een kern, en blijven na oplevering betrokken bij het beheer van hun eigen gebouw en omgeving. Waar een ontwikkelaar na de sleuteloverdracht vertrekt, blijft een collectief — als buur, als vrijwilliger, als vereniging van eigenaren die het pand generaties lang in stand houdt.</p>
+        <p>Wij zien vier bewegingen die dit type wonen dwingend maken voor de regio. Ten eerste de vergrijzing van kleine kernen, waar de bestaande woningvoorraad niet meer aansluit bij wie er woont. Ten tweede de eenzaamheid die daarmee samenhangt, en die collectieve woonvormen aantoonbaar verlichten. Ten derde de opgave om natuurinclusief en energiezuinig te bouwen — iets wat makkelijker is als uitgangspunt van een groep dan als opgelegde eis achteraf. En ten vierde de betaalbaarheid: woningen die geen winstoogmerk hoeven te dienen, kunnen structureel goedkoper blijven dan de vrije markt.</p>
+        <p>Wij zijn geen ontwikkelaar en geen corporatie. Wij zijn het loket, de begeleider en het geheugen van de beweging: we brengen bewoners met elkaar en met gemeenten in contact, bewaken de kwaliteit van het proces, en zorgen dat wat de ene groep leert, niet verloren gaat voor de volgende.</p>
+      </div>
+      <div style="margin-top: clamp(36px,5vh,52px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: clamp(16px,2.2vw,24px)">
+        <div style="border-top: 2px solid #1F5C38; padding-top: 16px">
+          <h3 style="font-weight: 700; font-size: 1.02rem; margin: 0 0 8px">Zeggenschap vóór schaal</h3>
+          <p style="font-family: 'Spectral', Georgia, serif; font-size: .95rem; line-height: 1.55; color: rgba(21,29,23,.75); margin: 0">Een klein, goed begeleid collectief weegt zwaarder dan een groot project zonder betrokkenheid.</p>
+        </div>
+        <div style="border-top: 2px solid #1F5C38; padding-top: 16px">
+          <h3 style="font-weight: 700; font-size: 1.02rem; margin: 0 0 8px">Beheer is onderdeel van bouwen</h3>
+          <p style="font-family: 'Spectral', Georgia, serif; font-size: .95rem; line-height: 1.55; color: rgba(21,29,23,.75); margin: 0">Wie na oplevering blijft wonen, denkt anders na over materiaalkeuzes en onderhoud dan wie vertrekt.</p>
+        </div>
+        <div style="border-top: 2px solid #1F5C38; padding-top: 16px">
+          <h3 style="font-weight: 700; font-size: 1.02rem; margin: 0 0 8px">Herhaalbaar, geen unicum</h3>
+          <p style="font-family: 'Spectral', Georgia, serif; font-size: .95rem; line-height: 1.55; color: rgba(21,29,23,.75); margin: 0">Elk traject levert modelafspraken op die het volgende collectief sneller vooruit helpen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="gemeenten" style="background: #E8ECE4">
     <div style="max-width: 1280px; margin: 0 auto; padding: clamp(56px,10vh,124px) clamp(20px,5vw,56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(32px,5vw,72px); align-items: center">
       <div style="min-width: 0">
@@ -87,24 +142,83 @@
     </div>
   </section>
 
-  
-  <section style="background: #9C7A2E; color: #151D17">
-    <div style="max-width: 1280px; margin: 0 auto; padding: clamp(40px,6vh,72px) clamp(20px,5vw,56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: clamp(26px,4vw,48px)">
-      <div style="min-width: 0">
-        <p style="font-weight: 800; font-size: clamp(2.4rem,4.4vw,3.6rem); line-height: 1; letter-spacing: -.03em; margin: 0 0 10px">100.000</p>
-        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.5; margin: 0">Woningen landelijk potentieel van wooncollectieven</p>
+  <section id="lessen" style="background: #151D17; color: #F4F6F1">
+    <div style="max-width: 1280px; margin: 0 auto; padding: clamp(56px,10vh,124px) clamp(20px,5vw,56px)">
+      <div style="max-width: 680px; margin-bottom: clamp(36px,5vh,56px)">
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #9C7A2E; margin: 0 0 18px">Wat we leerden van plannen die niet doorgingen</p>
+        <h2 style="font-weight: 700; font-size: clamp(1.8rem,3.2vw,2.7rem); line-height: 1.14; letter-spacing: -.02em; margin: 0 0 20px; text-wrap: pretty">Niet elk initiatief haalt de eindstreep — en dat is leerzaam</h2>
+        <p style="font-family: 'Spectral', Georgia, serif; font-size: clamp(1.02rem,1.3vw,1.14rem); line-height: 1.66; color: rgba(244,246,241,.82); margin: 0; text-wrap: pretty">De voorbeelden hieronder zijn samengestelde, fictieve illustraties op basis van veelvoorkomende knelpunten — geen verslag van één specifiek project. We delen ze omdat de patronen zich herhalen, in elke gemeente opnieuw.</p>
       </div>
-      <div style="min-width: 0">
-        <p style="font-weight: 800; font-size: clamp(2.4rem,4.4vw,3.6rem); line-height: 1; letter-spacing: -.03em; margin: 0 0 10px">±10%</p>
-        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.5; margin: 0">Aandeel van de nieuwbouwopgave</p>
-      </div>
-      <div style="min-width: 0">
-        <p style="font-weight: 800; font-size: clamp(2.4rem,4.4vw,3.6rem); line-height: 1; letter-spacing: -.03em; margin: 0 0 10px; opacity: .45">00</p>
-        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.5; margin: 0">Initiatieven in Limburg — cijfer aanvullen</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: clamp(20px,2.6vw,30px)">
+        <div style="background: rgba(244,246,241,.06); border-radius: 12px; padding: clamp(22px,2.6vw,28px)">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #9C7A2E; margin: 0 0 12px">Illustratief voorbeeld — locatie</p>
+          <h3 style="font-weight: 700; font-size: 1.08rem; line-height: 1.3; margin: 0 0 10px">Een perceel bleek na twee jaar niet uitgeefbaar</h3>
+          <p style="font-family: 'Spectral', Georgia, serif; font-size: .96rem; line-height: 1.6; color: rgba(244,246,241,.78); margin: 0">Een collectief in de Westelijke Mijnstreek had een locatie op het oog voordat de bestemmingswijziging rond was. Toen de omgevingsvergunning strandde op een archeologisch vooronderzoek, viel de financieringstermijn van de groep af. Les: begin de haalbaarheidstoets vóór de groepsvorming, niet erna.</p>
+        </div>
+        <div style="background: rgba(244,246,241,.06); border-radius: 12px; padding: clamp(22px,2.6vw,28px)">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #9C7A2E; margin: 0 0 12px">Illustratief voorbeeld — financiering</p>
+          <h3 style="font-weight: 700; font-size: 1.08rem; line-height: 1.3; margin: 0 0 10px">De bank vroeg om zekerheden die de groep niet kon bieden</h3>
+          <p style="font-family: 'Spectral', Georgia, serif; font-size: .96rem; line-height: 1.6; color: rgba(244,246,241,.78); margin: 0">Een kleine wooncoöperatie in het Maasdal liep vast toen de financier persoonlijke borgstelling van alle leden verlangde. Zonder een gezamenlijke rechtsvorm met beperkte aansprakelijkheid was dat voor de helft van de groep een breekpunt. Les: regel de rechtsvorm vóór het gesprek met de bank.</p>
+        </div>
+        <div style="background: rgba(244,246,241,.06); border-radius: 12px; padding: clamp(22px,2.6vw,28px)">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #9C7A2E; margin: 0 0 12px">Illustratief voorbeeld — draagvlak</p>
+          <h3 style="font-weight: 700; font-size: 1.08rem; line-height: 1.3; margin: 0 0 10px">De buurt voelde zich overvallen door de plannen</h3>
+          <p style="font-family: 'Spectral', Georgia, serif; font-size: .96rem; line-height: 1.6; color: rgba(244,246,241,.78); margin: 0">Een herbestemmingsproject nabij een kern in Zuid-Limburg kreeg pas laat een inloopavond, nadat het ontwerp al vastlag. Bezwaren over parkeerdruk zorgden voor vertraging die het collectief niet kon opvangen. Les: betrek de directe omgeving voordat het ontwerp definitief is, niet als formaliteit achteraf.</p>
+        </div>
+        <div style="background: rgba(244,246,241,.06); border-radius: 12px; padding: clamp(22px,2.6vw,28px)">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #9C7A2E; margin: 0 0 12px">Illustratief voorbeeld — groepsvorming</p>
+          <h3 style="font-weight: 700; font-size: 1.08rem; line-height: 1.3; margin: 0 0 10px">De groep viel uiteen voordat er een ontwerp lag</h3>
+          <p style="font-family: 'Spectral', Georgia, serif; font-size: .96rem; line-height: 1.6; color: rgba(244,246,241,.78); margin: 0">Een initiatief in de Peel begon met vijftien enthousiaste huishoudens, maar zonder heldere afspraken over besluitvorming vielen er binnen een jaar acht af. Les: leg spelregels voor stemrecht en uittreding vast vóórdat de eerste euro wordt uitgegeven.</p>
+        </div>
       </div>
     </div>
   </section>
-  
+
+  <section id="povi" style="background: #F4F6F1">
+    <div style="max-width: 1280px; margin: 0 auto; padding: clamp(56px,10vh,124px) clamp(20px,5vw,56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(32px,5vw,64px); align-items: start">
+      <div style="min-width: 0">
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #9C7A2E; margin: 0 0 18px">Provinciaal kader</p>
+        <h2 style="font-weight: 700; font-size: clamp(1.7rem,3vw,2.4rem); line-height: 1.16; letter-spacing: -.02em; margin: 0 0 18px; text-wrap: pretty">Hoe de Provinciale Omgevingsvisie ruimte biedt</h2>
+        <p style="font-family: 'Spectral', Georgia, serif; font-size: clamp(1rem,1.25vw,1.1rem); line-height: 1.66; color: rgba(21,29,23,.82); margin: 0 0 16px; text-wrap: pretty">Limburg werkt, zoals elke provincie, met een omgevingsvisie waarin ruimtelijke ambities voor wonen, landschap en voorzieningen samenkomen. Die visie is een kader, geen blauwdruk: gemeenten vertalen hem naar hun eigen omgevingsplan, met ruimte voor lokale afwegingen.</p>
+        <p style="font-family: 'Spectral', Georgia, serif; font-size: clamp(1rem,1.25vw,1.1rem); line-height: 1.66; color: rgba(21,29,23,.82); margin: 0; text-wrap: pretty">Voor collectief wonen is met name relevant hoe een provincie omgaat met inbreiding versus uitbreiding, met herbestemming van agrarisch of religieus vastgoed, en met de balans tussen woningbouw en landschapswaarden. Dit is algemene, illustratieve duiding — voor de actuele, formele tekst verwijzen we altijd naar de provincie en de betrokken gemeente.</p>
+      </div>
+      <div style="min-width: 0">
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #1F5C38; margin: 0 0 18px">Juridische vormen voor collectief wonen</p>
+        <div style="display: grid; gap: 18px">
+          <div style="background: #fff; border-radius: 10px; padding: 18px 20px; box-shadow: 0 1px 2px rgba(21,29,23,.06)">
+            <h3 style="font-weight: 700; font-size: 1rem; margin: 0 0 6px">Wooncoöperatie</h3>
+            <p style="font-family: 'Spectral', Georgia, serif; font-size: .94rem; line-height: 1.55; color: rgba(21,29,23,.78); margin: 0">Een coöperatieve vereniging waarin leden gezamenlijk eigenaar zijn van het vastgoed, met democratische zeggenschap over beheer en toewijzing.</p>
+          </div>
+          <div style="background: #fff; border-radius: 10px; padding: 18px 20px; box-shadow: 0 1px 2px rgba(21,29,23,.06)">
+            <h3 style="font-weight: 700; font-size: 1rem; margin: 0 0 6px">Vereniging van Eigenaren</h3>
+            <p style="font-family: 'Spectral', Georgia, serif; font-size: .94rem; line-height: 1.55; color: rgba(21,29,23,.78); margin: 0">Gangbaar bij particulier opdrachtgeverschap in groepsverband, waarbij elk huishouden individueel eigenaar wordt van de eigen woning.</p>
+          </div>
+          <div style="background: #fff; border-radius: 10px; padding: 18px 20px; box-shadow: 0 1px 2px rgba(21,29,23,.06)">
+            <h3 style="font-weight: 700; font-size: 1rem; margin: 0 0 6px">Erfpachtconstructie</h3>
+            <p style="font-family: 'Spectral', Georgia, serif; font-size: .94rem; line-height: 1.55; color: rgba(21,29,23,.78); margin: 0">Grond blijft in handen van gemeente of stichting, waardoor de grondprijs buiten de woningprijs blijft en betaalbaarheid op lange termijn geborgd kan worden.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="background: #F4F6F1">
+    <div style="max-width: 1280px; margin: 0 auto; padding: clamp(48px,8vh,96px) clamp(20px,5vw,56px)">
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #9C7A2E; margin: 0 0 24px">De beweging in cijfers</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: clamp(22px,3vw,32px)">
+        <leefland-data value="100.000" label="Landelijk potentieel" detail="Geschat aantal woningen dat via wooncollectieven gerealiseerd zou kunnen worden." accent="#9C7A2E"></leefland-data>
+        <leefland-data value="±10%" label="Aandeel nieuwbouwopgave" detail="Indicatief aandeel van de landelijke nieuwbouwopgave dat collectieven kunnen invullen." accent="#1F5C38"></leefland-data>
+        <leefland-data value="54" label="Initiatieven in beeld" detail="Collectieven die bij Leefland Limburg bekend zijn, in elke fase van het traject." accent="#9C7A2E"></leefland-data>
+        <leefland-data value="30" label="Gemeenten in Limburg" detail="Elke Limburgse gemeente kan in aanmerking komen voor begeleiding." accent="#1F5C38"></leefland-data>
+        <leefland-data value="5" label="Werkdagen reactietijd" detail="Standaard reactietermijn op een eerste aanmelding via het loket." accent="#9C7A2E"></leefland-data>
+        <leefland-data value="4" label="Stappen in het traject" detail="Van kennismaking via locatiescan en spelregels tot doorlopende begeleiding." accent="#1F5C38"></leefland-data>
+        <leefland-data value="3" label="Rechtsvormen" detail="Wooncoöperatie, VvE-constructie of erfpacht — elk met eigen voor- en nadelen." accent="#9C7A2E"></leefland-data>
+        <leefland-data value="1e" label="Aanspreekpunt" detail="Eén loket voor bewoners én gemeenten, in plaats van versnipperd contact." accent="#1F5C38"></leefland-data>
+      </div>
+    </div>
+  </section>
+
 
   <section id="initiatieven" style="background: #F4F6F1">
     <div style="max-width: 1280px; margin: 0 auto; padding: clamp(56px,10vh,124px) clamp(20px,5vw,56px)">
@@ -115,38 +229,7 @@
         </div>
         <a href="/initiatieven" style="font-size: 14.5px; font-weight: 600; color: #1F5C38; text-decoration: none" style-hover="color: #9C7A2E">Alle initiatieven →</a>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: clamp(18px,2.4vw,26px)">
-        <article style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 2px rgba(21,29,23,.07); transition: transform .22s ease, box-shadow .22s ease" style-hover="transform: translateY(-4px); box-shadow: 0 16px 34px rgba(21,29,23,.11)">
-          <div style="position: relative; aspect-ratio: 3 / 2; background-color: #DDE3D6; background-image: repeating-linear-gradient(135deg, rgba(31,92,56,.14) 0 2px, transparent 2px 11px)">
-            <span style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .07em; text-transform: uppercase; background: #1F5C38; color: #fff; padding: 6px 11px; border-radius: 6px">Sittard-Geleen</span>
-          </div>
-          <div style="padding: clamp(20px,2.4vw,26px)">
-            <h3 style="font-weight: 700; font-size: 1.14rem; line-height: 1.3; margin: 0 0 8px">Naam initiatief</h3>
-            <p style="font-family: 'Spectral', Georgia, serif; font-size: .98rem; line-height: 1.55; color: rgba(21,29,23,.75); margin: 0 0 14px">Achttien woningen rond een gedeelde binnentuin, in eigendom van de bewoners.</p>
-            <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: #9C7A2E; margin: 0">In ontwikkeling</p>
-          </div>
-        </article>
-        <article style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 2px rgba(21,29,23,.07); transition: transform .22s ease, box-shadow .22s ease" style-hover="transform: translateY(-4px); box-shadow: 0 16px 34px rgba(21,29,23,.11)">
-          <div style="position: relative; aspect-ratio: 3 / 2; background-color: #DDE3D6; background-image: repeating-linear-gradient(135deg, rgba(31,92,56,.14) 0 2px, transparent 2px 11px)">
-            <span style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .07em; text-transform: uppercase; background: #1F5C38; color: #fff; padding: 6px 11px; border-radius: 6px">Roermond</span>
-          </div>
-          <div style="padding: clamp(20px,2.4vw,26px)">
-            <h3 style="font-weight: 700; font-size: 1.14rem; line-height: 1.3; margin: 0 0 8px">Naam initiatief</h3>
-            <p style="font-family: 'Spectral', Georgia, serif; font-size: .98rem; line-height: 1.55; color: rgba(21,29,23,.75); margin: 0 0 14px">Twaalf huurwoningen voor jong en oud, gezocht wordt een locatie binnen de kern.</p>
-            <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: #9C7A2E; margin: 0">Locatie gezocht</p>
-          </div>
-        </article>
-        <article style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 2px rgba(21,29,23,.07); transition: transform .22s ease, box-shadow .22s ease" style-hover="transform: translateY(-4px); box-shadow: 0 16px 34px rgba(21,29,23,.11)">
-          <div style="position: relative; aspect-ratio: 3 / 2; background-color: #DDE3D6; background-image: repeating-linear-gradient(135deg, rgba(31,92,56,.14) 0 2px, transparent 2px 11px)">
-            <span style="position: absolute; top: 14px; left: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .07em; text-transform: uppercase; background: #1F5C38; color: #fff; padding: 6px 11px; border-radius: 6px">Gulpen-Wittem</span>
-          </div>
-          <div style="padding: clamp(20px,2.4vw,26px)">
-            <h3 style="font-weight: 700; font-size: 1.14rem; line-height: 1.3; margin: 0 0 8px">Naam initiatief</h3>
-            <p style="font-family: 'Spectral', Georgia, serif; font-size: .98rem; line-height: 1.55; color: rgba(21,29,23,.75); margin: 0 0 14px">Herbestemming van een leegstaande hoeve tot negen woningen met gedeelde werkplaats.</p>
-            <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: #9C7A2E; margin: 0">In voorbereiding</p>
-          </div>
-        </article>
-      </div>
+      <leefland-initiatieven-grid count="50"></leefland-initiatieven-grid>
     </div>
   </section>
 
@@ -165,7 +248,46 @@
       </blockquote>
     </div>
   </section>
-  
+
+
+  <section id="faq" style="background: #E8ECE4">
+    <div style="max-width: 900px; margin: 0 auto; padding: clamp(56px,10vh,124px) clamp(20px,5vw,56px)">
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #1F5C38; margin: 0 0 18px">Veelgestelde vragen</p>
+      <h2 style="font-weight: 700; font-size: clamp(1.8rem,3.2vw,2.7rem); line-height: 1.14; letter-spacing: -.02em; margin: 0 0 32px; text-wrap: pretty">Wat bewoners en gemeenten ons het vaakst vragen</h2>
+      <div>
+        <leefland-faq question="Wat is precies een wooncollectief?" category="Basis">
+          Een groep huishoudens die samen opdrachtgever is voor de bouw of renovatie van hun eigen woningen, vaak georganiseerd als wooncoöperatie of vereniging van eigenaren.
+        </leefland-faq>
+        <leefland-faq question="Moet ik al een groep hebben om mee te doen?" category="Starten">
+          Nee. U kunt zich ook aanmelden met alleen een idee — wij helpen bij het vormen van een groep en het vinden van gelijkgestemde bewoners in de regio.
+        </leefland-faq>
+        <leefland-faq question="Hoeveel kost begeleiding door Leefland Limburg?" category="Kosten">
+          De eerste kennismaking en het loket zijn kosteloos. Voor intensievere procesbegeleiding maken we per traject afspraken, vaak deels gedekt door gemeentelijke regelingen.
+        </leefland-faq>
+        <leefland-faq question="Kan een gemeente ons ook actief benaderen?" category="Gemeenten">
+          Zeker. Gemeenten kunnen via het loket een locatiescan aanvragen en initiatieven die bij ons bekend zijn koppelen aan geschikte percelen of panden.
+        </leefland-faq>
+        <leefland-faq question="Wat gebeurt er als een lid van de groep afhaakt?" category="Groepsvorming">
+          Dat hangt af van de gekozen rechtsvorm en de statuten. We adviseren elke groep om uittredingsregels vroeg vast te leggen, juist om dit soort situaties op te vangen.
+        </leefland-faq>
+        <leefland-faq question="Werken jullie alleen met nieuwbouw?" category="Typologie">
+          Nee. Herbestemming van bijvoorbeeld agrarisch vastgoed, kloosters of scholen komt minstens zo vaak voor als nieuwbouw op een kavel.
+        </leefland-faq>
+        <leefland-faq question="Blijven de woningen betaalbaar voor volgende bewoners?" category="Betaalbaarheid">
+          Bij een wooncoöperatie kan het vastgoed collectief eigendom blijven, waardoor het buiten de vrije markt valt — vastgelegd in statuten en gemeentelijke afspraken.
+        </leefland-faq>
+        <leefland-faq question="Hoe lang duurt een traject gemiddeld?" category="Planning">
+          Reken op enkele jaren tussen de eerste kennismaking en oplevering. Heldere afspraken met de gemeente aan de voorkant verkorten die doorlooptijd het meest.
+        </leefland-faq>
+        <leefland-faq question="Is natuurinclusief bouwen verplicht bij Leefland Limburg?" category="Duurzaamheid">
+          Het is uitgangspunt van onze begeleiding, geen wettelijke eis. In de praktijk kiezen vrijwel alle collectieven hier zelf bewust voor.
+        </leefland-faq>
+        <leefland-faq question="Kan ik me aanmelden als zelfstandig professional of partner?" category="Partners">
+          Ja — ontwerpers, procesbegeleiders, juristen en financiers die de derde bouwstroom willen versterken kunnen zich melden via de pagina Doe mee.
+        </leefland-faq>
+      </div>
+    </div>
+  </section>
 
   <section id="contact" style="background: #151D17; color: #F4F6F1">
     <div style="max-width: 1280px; margin: 0 auto; padding: clamp(56px,9vh,110px) clamp(20px,5vw,56px) clamp(30px,4vh,44px)">

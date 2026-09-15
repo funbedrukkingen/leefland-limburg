@@ -7,3 +7,4 @@ dist/
 .architect/
 .arc-env
 .enhance/
+.wrangler/
