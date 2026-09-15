@@ -2,10 +2,16 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "leefland-site",
+      "name": "leefland-enhance-dev",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["enhance", "dev"],
+      "port": 3333
+    },
+    {
+      "name": "leefland-static-dist",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "5173"],
-      "port": 5173
+      "runtimeArgs": ["-m", "http.server", "5174", "--directory", "dist"],
+      "port": 5174
     }
   ]
 }

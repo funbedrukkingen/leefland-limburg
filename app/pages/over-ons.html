@@ -1,44 +1,8 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Over ons — Leefland Limburg</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; }
-  body { margin: 0; background: #F4F6F1; color: #151D17; -webkit-font-smoothing: antialiased; }
-  a { color: #1F5C38; text-decoration-color: rgba(31,92,56,.35); text-underline-offset: 4px; }
-  a:hover { color: #9C7A2E; text-decoration-color: #9C7A2E; }
-  ::selection { background: #9C7A2E; color: #F4F6F1; }
-</style>
-</head>
-<body>
 <div style="font-family: 'Archivo', system-ui, sans-serif; background: #F4F6F1; overflow-x: hidden">
 
-  <div style="background: #1F5C38; color: rgba(244,246,241,.9); font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase">
-    <div style="max-width: 1280px; margin: 0 auto; padding: 9px clamp(20px,5vw,56px); display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between">
-      <span>Platform voor ecologisch-sociale wooninitiatieven</span>
-      <span>Provincie Limburg</span>
-    </div>
-  </div>
+  <site-topbar></site-topbar>
 
-  <header style="position: sticky; top: 0; z-index: 40; background: rgba(255,255,255,.94); backdrop-filter: blur(10px); box-shadow: 0 1px 0 rgba(21,29,23,.1)">
-    <div style="max-width: 1280px; margin: 0 auto; padding: 12px clamp(20px,5vw,56px); display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
-      <a href="index.html" style="display: block; flex: 0 0 auto">
-        <img src="assets/leefland-logo-breed.jpg" alt="Leefland Limburg" style="display: block; height: clamp(48px,5.6vw,68px); width: auto">
-      </a>
-      <nav style="display: flex; align-items: center; gap: clamp(14px,2.2vw,30px); flex-wrap: wrap; font-size: 15px; font-weight: 500">
-        <a href="index.html#aanpak" style="color: #151D17; text-decoration: none; padding: 8px 0; border-bottom: 2px solid transparent" style-hover="color: #1F5C38; border-color: #9C7A2E">Onze aanpak</a>
-        <a href="initiatieven.html" style="color: #151D17; text-decoration: none; padding: 8px 0; border-bottom: 2px solid transparent" style-hover="color: #1F5C38; border-color: #9C7A2E">Initiatieven</a>
-        <a href="voor-gemeenten.html" style="color: #151D17; text-decoration: none; padding: 8px 0; border-bottom: 2px solid transparent" style-hover="color: #1F5C38; border-color: #9C7A2E">Voor gemeenten</a>
-        <a href="over-ons.html" style="color: #1F5C38; text-decoration: none; padding: 8px 0; border-bottom: 2px solid #9C7A2E">Over ons</a>
-        <a href="doe-mee.html" style="font-size: 14.5px; font-weight: 600; background: #1F5C38; color: #fff; text-decoration: none; padding: 13px 22px; border-radius: 8px; transition: background .18s ease, box-shadow .18s ease" style-hover="background: #17492c; box-shadow: 0 8px 18px rgba(31,92,56,.28)">Doe mee</a>
-      </nav>
-    </div>
-  </header>
+  <site-header active="over-ons"></site-header>
 
   <section style="background: #E8ECE4">
     <div style="max-width: 1280px; margin: 0 auto; padding: clamp(44px,7vh,88px) clamp(20px,5vw,56px)">
@@ -128,26 +92,11 @@
     <div style="max-width: 1280px; margin: 0 auto; padding: clamp(48px,8vh,96px) clamp(20px,5vw,56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: clamp(28px,4vw,56px); align-items: center">
       <h2 style="font-weight: 800; font-size: clamp(1.7rem,3.2vw,2.6rem); line-height: 1.12; letter-spacing: -.025em; margin: 0; max-width: 24ch; text-wrap: pretty">Wilt u meedenken, meebouwen of meebeslissen?</h2>
       <div style="display: flex; flex-wrap: wrap; gap: 14px">
-        <a href="doe-mee.html" style="font-size: 15px; font-weight: 600; background: #9C7A2E; color: #151D17; text-decoration: none; padding: 16px 30px; border-radius: 8px; transition: background .15s linear" style-hover="background: #F4F6F1">Doe mee</a>
+        <a href="/doe-mee" style="font-size: 15px; font-weight: 600; background: #9C7A2E; color: #151D17; text-decoration: none; padding: 16px 30px; border-radius: 8px; transition: background .15s linear" style-hover="background: #F4F6F1">Doe mee</a>
         <a href="mailto:info@leeflandlimburg.nl" style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #F4F6F1; text-decoration: none; padding: 16px 0; border-bottom: 1px solid rgba(244,246,241,.4)" style-hover="color: #9C7A2E; border-color: #9C7A2E">info@leeflandlimburg.nl</a>
       </div>
     </div>
   </section>
 
-  <footer style="background: #151D17; color: #F4F6F1">
-    <div style="max-width: 1280px; margin: 0 auto; padding: clamp(36px,5vh,64px) clamp(20px,5vw,56px) clamp(28px,4vh,40px); display: flex; flex-wrap: wrap; gap: 22px; align-items: center; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: rgba(244,246,241,.6)">
-      <img src="assets/leefland-zegel.jpg" alt="Leefland Limburg" style="height: 64px; width: auto; mix-blend-mode: lighten; opacity: .95">
-      <nav style="display: flex; flex-wrap: wrap; gap: 20px">
-        <a href="index.html#aanpak" style="color: rgba(244,246,241,.6); text-decoration: none" style-hover="color: #9C7A2E">Onze aanpak</a>
-        <a href="initiatieven.html" style="color: rgba(244,246,241,.6); text-decoration: none" style-hover="color: #9C7A2E">Initiatieven</a>
-        <a href="voor-gemeenten.html" style="color: rgba(244,246,241,.6); text-decoration: none" style-hover="color: #9C7A2E">Voor gemeenten</a>
-        <a href="over-ons.html" style="color: rgba(244,246,241,.6); text-decoration: none" style-hover="color: #9C7A2E">Over ons</a>
-        <a href="doe-mee.html" style="color: rgba(244,246,241,.6); text-decoration: none" style-hover="color: #9C7A2E">Doe mee</a>
-      </nav>
-      <span>Samen bouwen aan een leefbare toekomst</span>
-    </div>
-  </footer>
+  <site-footer></site-footer>
 </div>
-<script src="interactions.js"></script>
-</body>
-</html>

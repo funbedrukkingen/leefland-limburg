@@ -2,3 +2,8 @@
 Thumbs.db
 *.zip
 extracted/
+node_modules/
+dist/
+.architect/
+.arc-env
+.enhance/

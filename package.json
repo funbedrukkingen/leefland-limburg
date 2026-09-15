@@ -1,0 +1,19 @@
+{
+    "name": "leefland-limburg",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "npx enhance dev",
+        "build:static": "node scripts/build-static.mjs"
+    },
+    "devDependencies": {
+        "@enhance/cli": "latest",
+        "@enhance/types": "latest"
+    },
+    "dependencies": {
+        "@enhance/arc-plugin-enhance": "latest",
+        "@enhance/arc-plugin-styles": "latest",
+        "@enhance/enhance-style-transform": "^0.1.2",
+        "@enhance/ssr": "^4.0.3",
+        "@enhance/styles-cribsheet": "latest"
+    }
+}
