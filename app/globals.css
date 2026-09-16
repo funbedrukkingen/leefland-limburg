@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border-subtle: var(--border-subtle);
+  --color-accent-action: var(--accent-action);
+  --color-accent-action-text: var(--accent-action-text);
+  --color-accent-nature: var(--accent-nature);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --font-sans: 'Archivo', 'Archivo Fallback';
+  --font-serif: 'Spectral', 'Spectral Fallback';
+  --font-mono: 'IBM Plex Mono', 'IBM Plex Mono Fallback';
+  --radius: 0rem;
+}
+
+:root {
+  color-scheme: light;
+  /* Paginabasis. */
+  --background: #e8ece4;
+  /* Subtiele afwisseling om een sectie af te bakenen (Probleem-sectie). */
+  --background-alt: #dde3d6;
+  /* Broodtekst en koppen. */
+  --foreground: #151d17;
+  --muted-foreground: #5c6a5d;
+  --border-subtle: rgb(21 29 23 / 15%);
+  /* Knoppen, links, actieve staten. Vaste waarde in beide modi. */
+  --accent-action: #1f3f7a;
+  /* Lichtere waarde voor losse tekst/rand/icoon direct op de achtergrond. */
+  --accent-action-text: #1f3f7a;
+  /* Decoratief, tags, grote koppen. Niet voor kleine leestekst. */
+  --accent-nature: #9c7a2e;
+  /* Vast in beide modi — conversie-sectie kantelt niet mee met de toggle. */
+  --ink: #151d17;
+  --paper: #e6ebe2;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #0f130f;
+  /* Subtiele donkere vulling voor kaarten en kaders. */
+  --background-alt: #151d17;
+  --foreground: #e6ebe2;
+  --muted-foreground: #9aa599;
+  --border-subtle: rgb(230 235 226 / 15%);
+  --accent-action-text: #5b82c4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--accent-action);
+  color: var(--paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-nature);
+  outline-offset: 3px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Abstracte contourlijnen die de glooiing van het Zuid-Limburgse landschap suggereren. */
+.contour-lines {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='140' viewBox='0 0 420 140'%3E%3Cpath d='M-10 24 Q 45 2 100 24 T 210 24 T 320 24 T 430 24' stroke='%239c7a2e' stroke-opacity='0.35' stroke-width='1' fill='none'/%3E%3Cpath d='M-10 62 Q 45 40 100 62 T 210 62 T 320 62 T 430 62' stroke='%239c7a2e' stroke-opacity='0.28' stroke-width='1' fill='none'/%3E%3Cpath d='M-10 100 Q 45 78 100 100 T 210 100 T 320 100 T 430 100' stroke='%239c7a2e' stroke-opacity='0.22' stroke-width='1' fill='none'/%3E%3Cpath d='M-10 130 Q 45 112 100 130 T 210 130 T 320 130 T 430 130' stroke='%239c7a2e' stroke-opacity='0.16' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 420px 140px;
+}
+
+/* Signatuur "stempel"-hover: verschuift 4px omhoog-links, harde offset-schaduw verschijnt zonder fade. */
+.stamp-hover {
+  --stamp-shadow: var(--color-foreground);
+  position: relative;
+  transition: transform 150ms ease;
+}
+
+.stamp-hover:hover,
+.stamp-hover:focus-visible {
+  transform: translate(-4px, -4px);
+  box-shadow: 4px 4px 0 0 var(--stamp-shadow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stamp-hover {
+    transition: none;
+  }
+
+  .stamp-hover:hover,
+  .stamp-hover:focus-visible {
+    transform: none;
+  }
+}
