@@ -3,11 +3,14 @@
     "version": "0.0.1",
     "scripts": {
         "start": "npx enhance dev",
-        "build:static": "node scripts/build-static.mjs"
+        "build": "npm run build:static",
+        "build:static": "node scripts/build-static.mjs",
+        "deploy": "npm run build:static && wrangler deploy"
     },
     "devDependencies": {
         "@enhance/cli": "latest",
-        "@enhance/types": "latest"
+        "@enhance/types": "latest",
+        "wrangler": "^4.132.0"
     },
     "dependencies": {
         "@enhance/arc-plugin-enhance": "latest",
