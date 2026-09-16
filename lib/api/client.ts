@@ -2,7 +2,7 @@ import type { ApiResponse, Initiative, InitiativeCategory, LimburgRegion, Ziensw
 
 // Empty by default: GET /api/initiatives resolves against the static Route Handler export.
 // Point NEXT_PUBLIC_API_BASE_URL at the Cloudflare Worker once the VPS backend is live.
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? ''
+const API_BASE_URL = 'https://api-leef-land.4one.group'
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const POSTAL_CODE_PATTERN = /^[1-9][0-9]{3}\s?[A-Za-z]{2}$/
